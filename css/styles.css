@@ -1,0 +1,12 @@
+.country{
+  width: 45%;
+  border: 2px solid;
+}
+.form{
+  border: 2px solid;
+  padding: 2rem;
+}
+.output{
+  padding: 3rem;
+  border: 2px solid;
+}
