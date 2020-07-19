@@ -26,3 +26,11 @@ body{
   background: rgba(0, 0, 0, 0.8);
   color: rgb(240, 188, 46);
 }
+#month, #date{
+  width: 5rem;
+  margin-right: 1rem;
+}
+#year{
+  width: 8rem;
+  margin-right: 2rem;
+}
