@@ -22,6 +22,7 @@ function calculateDayValue() {
       return false;
   }
 
+  //validate the year, month and date
   if (document.getElementById('year').value == "" || document.getElementById('year').value.length !== 4 || document.getElementById('year').value < 1000 || document.getElementById('year').value > 2021) {
       alert("Please enter a valid year")
       return false;
