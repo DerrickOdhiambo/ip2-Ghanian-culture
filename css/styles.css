@@ -1,8 +1,10 @@
-.country{
-  width: 45%;
-  border: 2px solid;
-}
-.form{
+.header{
   border: 2px solid;
   padding: 2rem;
+  background-image: url('../images/Akan\ Colors.jpg');
+}
+.header h1{
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  margin: 0 20rem;
 }
