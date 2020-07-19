@@ -34,3 +34,8 @@ body{
   width: 8rem;
   margin-right: 2rem;
 }
+#result{
+  padding: 2rem;
+  background: rgba(240, 188, 46, .7);
+  margin-top: .5rem;
+}
