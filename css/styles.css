@@ -35,7 +35,21 @@ body{
   margin-right: 2rem;
 }
 #result{
-  padding: 2rem;
-  background: rgba(240, 188, 46, .7);
+  padding: 1rem;
+  background: green;
   margin-top: .5rem;
+  font-size: 1.2rem;
+}
+#sub-btn, #res-btn{
+  color: whitesmoke;
+  background-color: green;
+  padding: .6rem 1rem;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  margin: .5rem;
+}
+#sub-btn:hover, #res-btn:hover{
+  cursor: pointer;
+  color: rgb(240, 188, 46);
 }
