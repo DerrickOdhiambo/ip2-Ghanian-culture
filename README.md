@@ -16,13 +16,11 @@ No setup is required for this application. Cloning is highly recommended, mostly
 ### Specifications
 - The date should be accurate.
 - Gender should be selected.
-- ``` JavaScript *** Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7 should be used for the calculation.
 
 ### Example
 |Behavior|Input Example|Output Example|
 |--------|-------------|--------------|
 |An accurate date|1994/04/12 Male|You were born on Wednesday and your Akan name is Kwaku|
-|----------------|---------------|------------------------------------------------------|
 |An accurate date|2003/11/29 Female|You were born on Saturdey and your Akan name is Ama|
 
 ## Technologies Used
@@ -38,7 +36,7 @@ No setup is required for this application. Cloning is highly recommended, mostly
 ## License
 MIT License
 
-Copyright (c) [202] [DerrickOdiambo]
+Copyright (c) [2020] [DerrickOdhiambo]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
