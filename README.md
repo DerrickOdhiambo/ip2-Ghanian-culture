@@ -20,8 +20,8 @@ No setup is required for this application. Cloning is highly recommended, mostly
 ### Example
 |Behavior|Input Example|Output Example|
 |--------|-------------|--------------|
-|An accurate date|1994/04/12 Male|You were born on Wednesday and your Akan name is Kwaku|
-|An accurate date|2003/11/29 Female|You were born on Saturdey and your Akan name is Ama|
+|An accurate date|04/12/1994 Male|You were born on Tuesday and your Kwabena name is Kwaku|
+|An accurate date|11/29/2009 Female|You were born on Sunday and your Akan name is Akosua|
 
 ## Technologies Used
 #### Front-End
