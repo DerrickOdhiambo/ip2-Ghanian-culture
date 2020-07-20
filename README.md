@@ -1,5 +1,5 @@
 # Akan Naming System
-- This application is used to calculate the day a person was born and assign a name to it according to the Akan culture.
+This application is used to calculate the day a person was born and assign a name to it according to the Akan culture.
 
 ## Author
 [DerrickOdhiambo](https://github.com/DerrickOdhiambo/ip2-Ghanian-culture)
