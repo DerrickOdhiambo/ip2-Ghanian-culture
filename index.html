@@ -23,20 +23,10 @@
       <div class="container akan-names">
         <h2>Ghanian Akan Names</h2>
         <p>Akan names are derived from  Ghanian culture, where children are given their first name as ‘day name’ corresponding to the day of the week they were born. This app will calculate the day you were born and allow you to know your Akan name, irregardless of whether you are Akan or not. Enjoy and be sure to try as many dates as possible. </p>
-        <form action="#" class="form">
-          <div class="date d-flex">
-            <div class="form-group">
-              <label for="">Year</label>
-              <input type="text" id="year" class="form-control" placeholder="YYYY" required>
-            </div>
-            <div class="form-group">
-              <label for="">Month</label>
-              <input type="text" name="" id="month" class="form-control" placeholder="MM" required>
-            </div>
-            <div class="form-group">
-              <label for="">Date</label>
-              <input type="text" name="" id="date" class="form-control" placeholder="DD" required>
-            </div>
+        <form action="#" class="form" id="myForm">
+          <div class="container date d-flex">
+            <label id="label">Date</label>
+            <input type="date" name="name" id="myDate" required="Invalid Date">
           </div>
           <div class="form-group">
             <div class="container">
@@ -47,9 +37,11 @@
               <p><input type="radio" name=gender id="female"> Female</p>
             </div>
           </div>
-          <input type="submit" value="Submit" id="sub-btn" onclick="calculateDayValue()">
-          <input type="reset" id="res-btn" value="Reset">
         </form>
+        <div>
+          <input type="submit" value="Get Date" id="sub-btn" onclick="calculateDay()">
+          <input type="reset" id="res-btn" onclick="resetForm()" value="Reset Form">
+        </div>
         <div class="output">
           <p id="result"></p>
         </div>

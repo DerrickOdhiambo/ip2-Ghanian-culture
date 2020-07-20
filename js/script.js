@@ -22,21 +22,6 @@ function calculateDayValue() {
       return false;
   }
 
-  //validate the year, month and date
-  if (document.getElementById('year').value == "" || document.getElementById('year').value.length !== 4 || document.getElementById('year').value < 1000 || document.getElementById('year').value > 2021) {
-      alert("Please enter a valid year")
-      return false;
-  } else if (document.getElementById('month').value == 0 || document.getElementById('month').value > 12) {
-      alert("Please enter a valid month")
-      return false;
-  } else if (document.getElementById('date').value == 0 || document.getElementById('date').value > 31) {
-      alert("Please enter a valid date")
-      return false;
-  } else if (Number.isInteger(mm) !== true || Number.isInteger(dd) !== true) {
-      alert("Year, month and day should be of type Integer")
-      return false;
-  } else {
-      let dayValue = Math.floor((((cc / 4) - 2 * cc - 1) + ((5 * yy / 4)) + ((26 * (mm + 1) / 10)) + dd) % 7);
 
       //final validation to print out the output
       if (gender === "Male") {
