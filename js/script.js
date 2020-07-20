@@ -1,33 +1,40 @@
-//creating variables for days, male names and female names
-var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
+var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 var maleNames = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame']
 var femaleNames = ['Akosua', 'Adwoa', ' Abenaa', 'Akua', 'Yaa', 'Afua', ' Ama']
 
-//create a function to get input value from the user
-function calculateDayValue() {
-  var year = document.getElementById('year').value;
-  var cc = parseInt(year.slice(0, 2));
-  var yy = parseInt(year.slice(2, 4));
-  var mm = parseInt(document.getElementById('month').value);
-  var dd = parseInt(document.getElementById('date').value);
+function calculateDay() {
+    // check if the date input is empty
+    if (document.getElementById('myDate').value == "") {
+        alert('Invalid Date. Please enter a date')
+        return false;
+    }
 
-  //validating the gender of user
-  var gender = "";
-  if (document.getElementById("male").checked) {
-      gender = "Male"
-  } else if (document.getElementById("female").checked) {
-      gender = "Female"
-  } else {
-      alert("Please select a gender")
-      return false;
-  }
+    //check if gender is selected
+    var gender = "";
+    if (document.getElementById("male").checked) {
+        gender = "Male"
+        console.log(gender)
+    } else if (document.getElementById("female").checked) {
+        gender = "Female"
+        console.log(gender)
+    } else {
+        alert("Please select a gender")
+        return false;
+    }
 
+    //to get the day value of the input
+    var theDate = new Date(document.getElementById('myDate').value)
+    var dayValue = theDate.getDay();
+    console.log(dayValue)
+    if (gender === "Male") {
+        document.getElementById('result').innerHTML = (`You were born on ${days[dayValue]} and your Akan name is ${maleNames[dayValue]}`)
+    } else {
+        document.getElementById('result').innerHTML = (`You were born on ${days[dayValue]} and your Akan name is ${femaleNames[dayValue]}`)
+    }
+}
 
-      //final validation to print out the output
-      if (gender === "Male") {
-          document.getElementById('result').innerHTML = (`You were born on ${days[dayValue]} and your Akan name is ${maleNames[dayValue]}`)
-      } else {
-          document.getElementById('result').innerHTML = (`You were born on ${days[dayValue]} and your Akan name is ${femaleNames[dayValue]}`)
-      }
-  }
+//function to reset the form once data is entered
+function resetForm() {
+    document.getElementById('myForm').reset()
+
 }
