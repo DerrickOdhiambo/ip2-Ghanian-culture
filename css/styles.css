@@ -53,3 +53,18 @@ body{
   cursor: pointer;
   color: rgb(240, 188, 46);
 }
+.footer{
+  background-color: black;
+  padding: 1rem;
+}
+.footer li{
+  display: inline;
+}
+.footer li a span{
+  padding: .3rem;
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+.footer-bottom{
+  text-align: center;
+}
